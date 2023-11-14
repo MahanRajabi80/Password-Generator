@@ -1,0 +1,94 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #22c1c3, #fdbb2d);
+    font-family: 'Muli', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 10px;
+    margin: 0;
+    color: #fff;
+    display: flex;
+}
+
+h3{
+    margin: 10px 0 20px;
+    text-align: center;
+    font-size: 20px;
+}
+#container{
+    background-color: #0c5791;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    width: 350px;
+    max-width: 100%;
+    border-radius: 20px;
+}   
+.resultbox{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    letter-spacing: 1px;
+    padding: 15px 10px 10px 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.resultbox #result{
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+  overflow-y: scroll;
+  height: 100%;
+}
+
+#result::-webkit-scrollbar {
+    width: 1rem;
+}
+.resultbox .copy-btn{
+    position: absolute;
+    border-radius: 20px;
+    font-size: 20px;
+    height: 40px;
+    width: 35px;
+    top: 5px;
+    left: 5px;
+}
+
+.resultbox .copy-btn:hover{
+    cursor: pointer;
+    box-shadow: -1px 1px 9px -2px rgba(155,190,189,0.81);
+}
+.setting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 18px;
+    border-bottom:2px solid #131334 ;
+}
+#generate{
+    background-color: #7ecbe0;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    color: black;
+    border: none;
+    margin-bottom: 10px;    
+}
+
+#generate:hover{
+    cursor: pointer;
+    box-shadow: -1px 1px 12px 5px rgba(7,1,75,0.88);
+}
